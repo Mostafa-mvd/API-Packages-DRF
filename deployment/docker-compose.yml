@@ -1,0 +1,16 @@
+version: "3.3"
+
+volumes: 
+  TestDB:
+
+services:
+  db:
+    image: "postgres:13.3-alpine"
+    ports: 
+      - 5432:5432
+    volumes: 
+      - TestDB:/var/lib/postgresql/data
+    environment: 
+      POSTGRES_DB: "test_db"
+      POSTGRES_USER: "mostafa22"
+      POSTGRES_PASSWORD: "mo20sizdah20"
