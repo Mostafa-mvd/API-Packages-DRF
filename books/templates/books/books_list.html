@@ -1,0 +1,23 @@
+<html>
+<head></head>
+<body>
+    <table>
+        <tr>
+            <th>title</th>
+            <th>subtitle</th>
+            <th>author</th>
+            <th>isbn</th>
+        </tr>
+        <tbody>
+            {% for book_obj in object_list%}
+                <tr>
+                    <td>{{book_obj.title}}</td>
+                    <td>{{book_obj.subtitle}}</td>
+                    <td>{{book_obj.author}}</td>
+                    <td>{{book_obj.isbn}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
