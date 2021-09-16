@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'api_app.apps.ApiAppConfig',
     'todo.apps.TodoConfig',
     'posts.apps.PostsConfig',
+    'polls.apps.PollsConfig',
 ]
 
 

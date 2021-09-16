@@ -3,12 +3,14 @@ from rest_framework import routers
 from . import views as api_views
 from todo import views as todo_views
 from posts import views as posts_views
+from polls import views as polls_views
 
 
 app_name = "api"
 
 
 router = routers.DefaultRouter()
+
 
 router.register(
     prefix="posts",
@@ -60,6 +62,35 @@ urlpatterns = [
         name="users_detail"
     ),
     path(
-        'viewsets/', 
-        include(router.urls)),
+        route='viewsets/', 
+        view=include(router.urls)
+    ),
+    path(
+        route='polls-api-view/list/',
+        view=polls_views.PollList.as_view()
+    ),
+    path(
+        route='polls-api-view/detail/<int:pk>/',
+        view=polls_views.PollDetail.as_view()
+    ),
+    path(
+        route='polls-generic-view/list/',
+        view=polls_views.PollListCreate.as_view()
+    ),
+    path(
+        route='polls-generic-view/detail/<int:pk>/',
+        view=polls_views.PollDetailRemove.as_view()
+    ),
+    path(
+        route='polls-generic-view/<int:pk>/choices-generic-view/',
+        view=polls_views.ChoiceListCreate.as_view()
+    ),
+    path(
+        route='vote-generic-view/',
+        view=polls_views.VoteCreate.as_view()
+    ),
+    path(
+        route='polls-generic-view/<int:poll_pk>/choices-generic-view/<int:choice_pk>/vote/',
+        view=polls_views.VoteCreateAPIView.as_view()
+    )
 ]
