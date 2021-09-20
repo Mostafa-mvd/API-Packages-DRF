@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'todo.apps.TodoConfig',
     'posts.apps.PostsConfig',
     'polls.apps.PollsConfig',
+    'miare.apps.MiareConfig',
 ]
 
 

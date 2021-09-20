@@ -1,0 +1,9 @@
+- model: miare.courier
+  pk: 1
+  fields:
+    name: C1
+
+- model: miare.courier
+  pk: 2
+  fields:
+    name: C2

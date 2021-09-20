@@ -1,0 +1,8 @@
+- model: auth.user
+  pk: 1
+  fields:
+    username: admin
+    password: 'pbkdf2_sha256$260000$8wSqORQhJ4J4UMMRdH92kq$y9yeU1hZsHhkDKKJnyzx+v8U+LarHz70/x/mEsHOWCw=' # 1234
+    is_superuser: true
+    is_staff: true
+    is_active: true

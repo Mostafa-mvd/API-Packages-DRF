@@ -1,0 +1,14 @@
+- model: miare.area
+  pk: 1
+  fields:
+    name: A1
+
+- model: miare.area
+  pk: 2
+  fields:
+    name: A2
+
+- model: miare.area
+  pk: 3
+  fields:
+    name: A3

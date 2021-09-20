@@ -1,0 +1,11 @@
+- model: miare.shift
+  pk: 1
+  fields:
+    start: '09:00'
+    end: '12:00'
+
+- model: miare.shift
+  pk: 2
+  fields:
+    start: '12:00'
+    end: '15:00'

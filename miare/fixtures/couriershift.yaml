@@ -1,0 +1,30 @@
+# Period out of capacity dates
+- model: miare.couriershift
+  pk: 1111
+  fields:
+    courier: 1
+    shift: 1
+    area: 1
+    shift_begin: 2020-01-01
+    shift_end: 2020-12-15
+
+# Period covers 2021-01-01
+- model: miare.couriershift
+  pk: 1222
+  fields:
+    courier: 1
+    shift: 2
+    area: 2
+    shift_begin: 2020-12-16
+    shift_end: 2021-01-01
+
+
+# Period covers both date values
+- model: miare.couriershift
+  pk: 2222
+  fields:
+    courier: 2
+    shift: 2
+    area: 2
+    shift_begin: 2021-01-01
+    shift_end: 2022-01-01

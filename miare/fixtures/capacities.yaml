@@ -1,0 +1,95 @@
+- model: miare.capacity
+  pk: 111
+  fields:
+    shift: 1
+    area: 1
+    date: 2021-01-01
+    capacity: 2
+
+- model: miare.capacity
+  pk: 112
+  fields:
+    shift: 1
+    area: 1
+    date: 2021-01-02
+    capacity: 2
+
+- model: miare.capacity
+  pk: 121
+  fields:
+    shift: 1
+    area: 2
+    date: 2021-01-01
+    capacity: 2
+
+- model: miare.capacity
+  pk: 122
+  fields:
+    shift: 1
+    area: 2
+    date: 2021-01-02
+    capacity: 2
+
+- model: miare.capacity
+  pk: 131
+  fields:
+    shift: 1
+    area: 3
+    date: 2021-01-01
+    capacity: 2
+
+- model: miare.capacity
+  pk: 132
+  fields:
+    shift: 1
+    area: 3
+    date: 2021-01-02
+    capacity: 2
+
+- model: miare.capacity
+  pk: 211
+  fields:
+    shift: 2
+    area: 1
+    date: 2021-01-01
+    capacity: 2
+
+- model: miare.capacity
+  pk: 212
+  fields:
+    shift: 2
+    area: 1
+    date: 2021-01-02
+    capacity: 2
+
+- model: miare.capacity
+  pk: 221
+  fields:
+    shift: 2
+    area: 2
+    date: 2021-01-01
+    capacity: 2
+
+- model: miare.capacity
+  pk: 222
+  fields:
+    shift: 2
+    area: 2
+    date: 2021-01-02
+    capacity: 2
+
+- model: miare.capacity
+  pk: 231
+  fields:
+    shift: 2
+    area: 3
+    date: 2021-01-01
+    capacity: 2
+
+- model: miare.capacity
+  pk: 232
+  fields:
+    shift: 2
+    area: 3
+    date: 2021-01-02
+    capacity: 2
